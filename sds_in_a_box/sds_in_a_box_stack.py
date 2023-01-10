@@ -65,11 +65,11 @@ class SdsInABoxStack(Stack):
             # Require https connections
             enforce_https=True,
             # Destroy OS with cdk destroy
-            removal_policy=RemovalPolicy.DESTROY,
-            fine_grained_access_control=opensearch.AdvancedSecurityOptions(
-              master_user_name="master-user",
-              master_user_password=os_secret.secret_value
-            )
+            removal_policy=RemovalPolicy.DESTROY
+            # fine_grained_access_control=opensearch.AdvancedSecurityOptions(
+            #   master_user_name="master-user",
+            #   master_user_password=os_secret.secret_value
+            # )
         )
 
         # This is the role that the lambdas will assume

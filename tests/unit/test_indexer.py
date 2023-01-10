@@ -15,7 +15,7 @@ class TestIndexer(unittest.TestCase):
 
     def setUp(self):
         #Opensearch client Params
-        os.environ["OS_DOMAIN"] = 'search-sds-metadata-uum2vnbdbqbnh7qnbde6t74xim.us-west-2.es.amazonaws.com'
+        os.environ["OS_DOMAIN"] = 'search-sds-metadata-yuc7xogphdyvj6rtoelcg5reqi.us-east-1.es.amazonaws.com'
         os.environ["OS_PORT"] = '443'
         os.environ["OS_INDEX"] = "test_data"
 
